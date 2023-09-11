@@ -1,0 +1,87 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr) ;    
+    grid-template-rows: 200px;
+}        
+.fondo1{
+    background-color: #36761C;
+    height: 100px;
+    width: 100%;
+
+}
+.titulo{
+    position: relative;
+    top: 2cqh;
+    text-align: center;
+    transform: scale(1.8);
+    font-family:  'Courier New', Courier, monospace     
+    
+}
+
+.for{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    
+}
+
+.formulario{
+background-color: #ffff;
+border: 1px solid #ccc;
+border-radius: 5px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+padding: 15px;
+width: 580px;
+height: 400px;
+position: absolute;
+left: 150px;
+top: 220px;
+
+}
+.formulario_registro{
+    background-color: #ffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px; 
+    padding: 15px;
+    width: 600px;  
+    height: 300px;
+    position: absolute;
+    left: 1000px;
+    top: 220px
+}
+.formulario_lqsomos{
+    background-color: #36761C;
+    height: 7%;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+}
+
+.fondo1 img{
+    width: 110px ; 
+    height: 110px;
+    position: absolute;
+    top: 0;
+    left: 97%;
+
+}
+.material-symbols-outlined{
+    position: absolute;
+    top: 1.5ch;
+    transform: scale(1,2);
+    left: 11px;
+}
+.fondo2{
+    background-color: #36761C;
+    height: 200px;
+    width: 100%;
+    margin-top: 900px;
+}

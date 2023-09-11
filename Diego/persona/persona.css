@@ -1,0 +1,79 @@
+.tut{
+    background-color: #36761C;
+    height: 100px;
+    width: 100%;
+}
+.titulo{ 
+    position: relative;
+    top: 2cqh;
+    text-align: center;
+    transform: scale(1.5);
+}
+.material-symbols-outlined{
+    position: absolute;
+    top: 1.5ch;
+    transform: scale(1,2);
+    left: 11px;
+}
+.cuadro1{
+    width: 560px;
+    height: 900px;
+    background-color: #36761C;
+    position: absolute;
+    right: 10px;
+    margin-top: 0dvh;
+    
+}
+.cuadro2{
+    background-color: #ffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px; 
+    padding: 15px;
+    width: 590px;  
+    height: 350px;
+    position: absolute;
+    margin-top: 210px;
+    right: 900px;
+}
+
+.list-group{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 50px;
+}
+.img-thumbnail{
+    height: 105px;
+    width: 400px;
+}
+*.list-group-item{
+    height: 40px;
+    width: 600px;
+}.buscador1{
+    position: absolute;
+    margin-top: 100px;
+    height: 90px;
+    width: 500px;
+}
+.encabezado-vacantes{
+   height: 10PX;
+}
+.links{
+    position: absolute;
+    margin-top: 150px;
+}
+.con-hojadevida{
+    height: 10px;
+    width: 200px;
+    position: absolute;
+    left: 10px;
+}
+.act-datos{
+    height: 10px;
+    width: 200px;
+    position: absolute;
+    margin-top: 25px;
+    left: 10px;
+}

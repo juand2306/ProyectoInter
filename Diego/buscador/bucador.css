@@ -1,0 +1,84 @@
+.tut{
+    background-color: #36761C;
+    height: 100px;
+    width: 100%;
+}
+.titulo{ 
+    position: relative;
+    top: 2cqh;
+    text-align: center;
+    transform: scale(1.5);
+}
+.material-symbols-outlined{
+    position: absolute;
+    top: 55px;
+    transform: scale(1,2);
+    left: 15px;
+}
+.cuadro1{
+    background-color: #ffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px; 
+    padding: 15px;
+    width: 450px;  
+    height: 150px;
+    position: absolute;
+    margin-top: 310px;
+    left: 10px;
+}
+.form-control{
+    height: 10px;
+    width: 450px;
+}
+.cuadro3{
+    height: 1300px;
+    width: 1500px;
+    border: 1px solid black;
+    position: absolute;
+    right: 10px;
+}
+.cuadro4{
+    height: 1200px;
+    width: 1400px;
+    border: 1px solid black;
+    position: absolute;
+    right: 50px;
+    margin-top: 40px;
+}
+
+.c5{
+    width: 1300px; /* Ancho del rectángulo en píxeles */
+    height: 250px;
+    border: 1px solid black;
+    position: absolute;
+    margin-top:250px ;
+    right: 105px;
+}
+.c6{
+    height: 250px;
+    width: 1300px;
+    border: 1px solid black;
+    position: absolute;
+    margin-top: 550px;
+    right: 105px;
+}
+.c7{
+    height: 250px;
+    width: 1300px;
+    border: 1px solid black;
+    position: absolute;
+    margin-top: 850px;
+    right: 95px;
+}
+.titulo-info{
+    transform: scale(1.1);
+    position: absolute;
+    left: 80px;
+    color: blue;
+
+}
+
+
+
