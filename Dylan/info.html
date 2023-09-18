@@ -1,10 +1,22 @@
 <html>
+
 <head>
   <style>
     body {
-      background-color: green;
+      background-color: white;
       color: black;
     }
+
+    .recuadro {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0%;
+      height: 100px;
+      width: 100%;
+      background-color: #008000;
+    }
+
     .top-bar {
       background-color: white;
       display: flex;
@@ -12,41 +24,73 @@
       justify-content: space-between;
       padding: 10px;
     }
+
     .top-bar-icon {
       width: 30px;
       height: 30px;
     }
+
+    .top-center {
+      align-items: center;
+    }
+
     .top-bar-button {
       background-color: green;
       color: white;
       padding: 10px 20px;
       border-radius: 10px;
     }
+
     .job-box {
       background-color: white;
+      height: calc(60% - 10px);
+      width: calc(96, 9% - 10px);
       margin: 20px;
       padding: 20px;
-      border: 1px solid black;
+      border: 3px solid #008000;
     }
+
     .job-title {
       font-weight: bold;
       font-size: 25px;
     }
+
     .job-description {
       color: gray;
       font-size: 20px;
+      text-align: left;
+      margin-right: 50%;
     }
+
+    /* .job-requeriments {
+      color: black;
+      font-size: 30px;
+      text-align: right;
+      margin-left: 50%;
+    } */
   </style>
 </head>
+
 <body>
-  <div class="top-bar">
-    <img src="search-icon.png" class="top-bar-icon">
-    <img src="home-icon.png" class="top-bar-icon">
-    <button class="top-bar-button">Info vacante</button>
-  </div>
+  <nav>
+    <h1 class="recuadro">info vacante</h1>
+  </nav>
   <div class="job-box">
     <div class="job-title">Se busca personal</div>
-    <div class="job-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+    <div class="job-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores
+      dignissimos vel alias nemo. Facilis ipsa ducimus, alias qui fugit minus non, amet tempore odio architecto eligendi
+      beatae voluptatibus veritatis quam reprehenderit sint. Velit id in voluptatibus sequi sapiente vel saepe ratione
+      ab molestiae labore temporibus qui veniam necessitatibus similique nemo magnam, natus facilis harum! Quibusdam, et
+      eaque sed voluptates esse itaque sint perspiciatis quasi qui recusandae est quas maxime rem natus corporis, dolore
+      magnam placeat fugiat ipsa amet reiciendis iure molestiae magni? Illo nam repellendus quod eius aspernatur
+      veritatis eos! Eum minus quam neque placeat earum vero architecto nam.</div>
+    <!-- <ol class="job-requeriments">
+      <li>experiencia</li>
+      <li>puesto</li>
+      <li>sueldo</li>
+      <li>horario</li>
+    </ol> -->
   </div>
 </body>
+
 </html>
