@@ -1,13 +1,14 @@
+
 .tut{
     background-color: #36761C;
-    height: 100px;
-    width: 100%;
+
 }
 .titulo{ 
     position: relative;
     top: 2cqh;
     text-align: center;
-    transform: scale(1.5);
+    height: 8vh;
+    width: auto;
 }
 .material-symbols-outlined{
     position: absolute;
@@ -20,17 +21,31 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 15px; 
+    margin-top: 10%;
+    margin-right: 20%;
+    margin-left: 20%;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+
+    /* padding: 15px; 
     padding: 15px;
     width: 450px;  
     height: 150px;
     position: absolute;
     margin-top: 310px;
-    left: 10px;
+    left: 10px; */
 }
 .form-control{
-    height: 10px;
-    width: 450px;
+    height: 3vh;
+    width: 70%;
+    margin-top: 2%;
+}
+
+.links{
+    margin-top: 4%;
 }
 .cuadro3{
     height: 1300px;
@@ -79,6 +94,4 @@
     color: blue;
 
 }
-
-
 
