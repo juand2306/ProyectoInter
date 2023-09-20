@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -5,16 +6,20 @@
     body {
       background-color: white;
       color: black;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
     }
 
     .recuadro {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 0%;
+      margin: 0;
       height: 100px;
       width: 100%;
       background-color: #008000;
+      font-size: 24px;
     }
 
     .top-bar {
@@ -43,8 +48,8 @@
 
     .job-box {
       background-color: white;
-      height: calc(60% - 10px);
-      width: calc(96, 9% - 10px);
+      display: flex;
+      flex-direction: column; 
       margin: 20px;
       padding: 20px;
       border: 3px solid #008000;
@@ -53,21 +58,54 @@
     .job-title {
       font-weight: bold;
       font-size: 25px;
+      margin-bottom: 10px;
     }
 
     .job-description {
       color: gray;
       font-size: 20px;
-      text-align: left;
-      margin-right: 50%;
     }
 
-    /* .job-requeriments {
+    .job-requeriments {
       color: black;
-      font-size: 30px;
-      text-align: right;
-      margin-left: 50%;
-    } */
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    .job-requeriments ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .job-requeriments li {
+      margin: 5px 0;
+    }
+
+  
+
+    @media (max-width: 768px) {
+      .recuadro {
+        font-size: 18px;
+      }
+
+      .top-bar-button {
+        font-size: 16px;
+      }
+
+      .job-box {
+        margin: 10px;
+        padding: 10px;
+      }
+
+      .job-title {
+        font-size: 20px;
+      }
+
+      .job-description,
+      .job-requeriments {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 
@@ -77,20 +115,23 @@
   </nav>
   <div class="job-box">
     <div class="job-title">Se busca personal</div>
-    <div class="job-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores
-      dignissimos vel alias nemo. Facilis ipsa ducimus, alias qui fugit minus non, amet tempore odio architecto eligendi
-      beatae voluptatibus veritatis quam reprehenderit sint. Velit id in voluptatibus sequi sapiente vel saepe ratione
-      ab molestiae labore temporibus qui veniam necessitatibus similique nemo magnam, natus facilis harum! Quibusdam, et
-      eaque sed voluptates esse itaque sint perspiciatis quasi qui recusandae est quas maxime rem natus corporis, dolore
-      magnam placeat fugiat ipsa amet reiciendis iure molestiae magni? Illo nam repellendus quod eius aspernatur
+    <div class="job-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores dignissimos
+      vel alias nemo. Facilis ipsa ducimus, alias qui fugit minus non, amet tempore odio architecto eligendi beatae
+      voluptatibus veritatis quam reprehenderit sint. Velit id in voluptatibus sequi sapiente vel saepe ratione ab
+      molestiae labore temporibus qui veniam necessitatibus similique nemo magnam, natus facilis harum! Quibusdam, et
+      eaque sed voluptates esse itaque sint perspiciatis quasi qui recusandae est quas maxime rem natus corporis,
+      dolore magnam placeat fugiat ipsa amet reiciendis iure molestiae magni? Illo nam repellendus quod eius aspernatur
       veritatis eos! Eum minus quam neque placeat earum vero architecto nam.</div>
-    <!-- <ol class="job-requeriments">
-      <li>experiencia</li>
-      <li>puesto</li>
-      <li>sueldo</li>
-      <li>horario</li>
-    </ol> -->
+    <div class="job-requeriments">
+      <ul>
+        <li>Experiencia</li>
+        <li>Puesto</li>
+        <li>Sueldo</li>
+        <li>Horario</li>
+      </ul>
+    </div>
   </div>
 </body>
 
 </html>
+
