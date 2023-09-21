@@ -1,16 +1,22 @@
-
-.fondo {
+body{
     background-color:#36761C;
-    width: 100%; /* Ancho del 100% para que abarque todo el contenedor */
-    height: 995px; /* Altura de 200 píxeles (ajusta según sea necesario) */
 }
 
 .barra{
-    position:absolute;
-    top: 30px;
-    left: 50px;
-    width: 400px;
+    margin-top: 5%;
+    margin-left: 8%;
+    width: 100%;
 }
+
+input{
+    width:20%;
+}
+
+.btn{
+    margin: 8px;
+    width: 7%;
+}
+
 
 .cuadro_2 {
     width: 900px; /* Ancho en píxeles */
