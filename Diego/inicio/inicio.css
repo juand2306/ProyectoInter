@@ -1,19 +1,20 @@
-.container{
-    display: grid;
-    grid-template-columns: repeat(1,1fr) ;    
-    grid-template-rows: 200px;
-}        
+*{
+    border: 0;
+    margin: 0;
+
+}
+
 .fondo1{
     background-color: #36761C;
-    height: 100px;
-    width: 100%;
+    position: relative;
+    height: 10vh;
+    width: auto;
 
 }
 .titulo{
     position: relative;
     top: 2cqh;
     text-align: center;
-    transform: scale(1.8);
     font-family:  'Courier New', Courier, monospace     
     
 }
@@ -36,12 +37,12 @@ background-color: #ffff;
 border: 1px solid #ccc;
 border-radius: 5px;
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-padding: 15px;
-width: 580px;
-height: 400px;
+padding: 1ch;
+width: 37%;
+height: 47%;
 position: absolute;
-left: 150px;
-top: 220px;
+left: 5%;
+top: 30%;
 
 }
 .formulario_registro{
@@ -49,39 +50,19 @@ top: 220px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 15px; 
-    padding: 15px;
-    width: 600px;  
-    height: 300px;
+    padding: 1%; 
+    width: 40%;  
+    height: 30%;
     position: absolute;
-    left: 1000px;
-    top: 220px
-}
-.formulario_lqsomos{
-    background-color: #36761C;
-    height: 7%;
-    width: 100%;
-    position: absolute;
-    top: 100%;
-}
+    right: 15%;
+    top: 220px;
 
-.fondo1 img{
-    width: 110px ; 
-    height: 110px;
-    position: absolute;
-    top: 0;
-    left: 97%;
 
-}
-.material-symbols-outlined{
-    position: absolute;
-    top: 1.5ch;
-    transform: scale(1,2);
-    left: 11px;
 }
 .fondo2{
     background-color: #36761C;
-    height: 200px;
-    width: 100%;
+    height: 20vh;
+    width: 1000cp;
     margin-top: 900px;
 }
+
