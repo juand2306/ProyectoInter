@@ -91,7 +91,12 @@
   <nav class="recuadro">
     <h1>Lista vacantes</h1>
   </nav>
+
   <section class="recuadro2">
+    <button class="filter-button" data-filter="all">Todos</button>
+    <button class="filter-button" data-filter="desarrollador">Desarrollador</button>
+    <button class="filter-button" data-filter="analista">Analista</button>
+    <button class="filter-button" data-filter="diseñador">Diseñador</button>
     <div class="job">
       <div class="job-header">Desarrollador web</div>
       <div class="job-info">
@@ -122,6 +127,33 @@
     <input type="text" class="search-bar" placeholder="Buscar..." />
     <button class="filter-button">Filtrar</button>
   </section>
+  <script>
+    
+    function filterJobs(filter) {
+      const jobs = document.querySelectorAll('.job');
+  
+      jobs.forEach((job) => {
+        const jobType = job.querySelector('.job-header').textContent.toLowerCase();
+  
+        if (filter === 'all' || jobType.includes(filter)) {
+          job.style.display = 'block';
+        } else {
+          job.style.display = 'none';
+        }
+      });
+    }
+  
+    
+    const filterButtons = document.querySelectorAll('.filter-button');
+  
+    filterButtons.forEach((button) => {
+      button.addEventListener('click', (event) => {
+        const filter = event.target.getAttribute('data-filter');
+        filterJobs(filter);
+      });
+    });
+  </script>
+  
 </body>
 
 </html>
