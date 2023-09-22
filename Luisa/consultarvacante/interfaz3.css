@@ -3,75 +3,107 @@ body{
 }
 
 .barra{
-    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 2%;
     margin-left: 8%;
-    width: 100%;
+    width: 40%;
 }
 
-input{
-    width:20%;
+input.busqueda {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #000;
+    outline: none;
 }
 
-.btn{
-    margin: 8px;
-    width: 7%;
+button.btn {
+    margin-left: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 
 .cuadro_2 {
-    width: 900px; /* Ancho en píxeles */
-    height: 35px; /* Altura en píxeles */
-    background-color: white; /* Color de fondo */
-    border: 2px solid black; /* Borde de 2 píxeles sólido */
-    border-radius: 5px; /* Bordes redondeados */
-    margin: 20px; /* Margen exterior de 20 píxeles */
-    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5); /* Sombra */
-    position: absolute;
-    margin-top: 100px;
-    left: 75%;
-}   
+    width: 100%;
+    max-width: 1100px;
+    height: 20px;
+    margin: 50px auto; 
+    padding: 15px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+    text-align: start;
+}
 
-.cuadro_3 {
-    width: 900px; /* Ancho en píxeles */
-    height: 140px; /* Altura en píxeles */
-    background-color: white; /* Color de fondo */
-    border: 2px solid black; /* Borde de 2 píxeles sólido */
-    border-radius: 5px; /* Bordes redondeados */
-    margin: 20px; /* Margen exterior de 20 píxeles */
-    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5); /* Sombra */
-    position: absolute;
-    margin-top: 170px;
-    left: 75%;
 
-}  .cuadro_4 {
-    width: 900px; /* Ancho en píxeles */
-    height: 140px; /* Altura en píxeles */
-    background-color: white; /* Color de fondo */
-    border: 2px solid black; /* Borde de 2 píxeles sólido */
-    border-radius: 5px; /* Bordes redondeados */
-    margin: 20px; /* Margen exterior de 20 píxeles */
-    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5); /* Sombra */
-    position: absolute;
-    margin-top: 345px;
-    left: 75%;
-}  
 
-.cuadro_5 {
-    width: 900px; /* Ancho en píxeles */
-    height: 140px; /* Altura en píxeles */
-    background-color: white; /* Color de fondo */
-    border: 2px solid black; /* Borde de 2 píxeles sólido */
-    border-radius: 5px; /* Bordes redondeados */
-    margin: 20px; /* Margen exterior de 20 píxeles */
-    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5); /* Sombra */
-    position: absolute;
-    margin-top: 520px;
-    left: 75%;
-}  
+@media (max-width: 768px) {
+    .barra {
+        flex-direction: column; /* Apilamos los elementos en pantallas pequeñas */
+        text-align: center; /* Centramos el texto en pantallas pequeñas */
+    }
+
+    input.busqueda {
+        width: 100%; /* El input ocupa todo el ancho en pantallas pequeñas */
+        margin-bottom: 10px;
+    }
+
+    button.btn {
+        margin-left: 0;
+    }
+
+    .cuadro_2 {
+        width: 90%; /* Aumentamos el ancho en pantallas pequeñas */
+    }
+}
+
+.cuadro_3, .cuadro_4, .cuadro_5 {
+    width: 100%;
+    max-width: 1100px;
+    margin: 10px auto; 
+    padding: 20px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+    text-align: start;
+    justify-content: start;
+}
+
+.link1, .link2, .link3 {
+    text-decoration: none;
+    color: black; 
+    font-weight: bold; 
+    font-size: 16px;
+    text-align: start;
+}
+
+
+@media (max-width: 768px) {
+    .cuadro_3 {
+        width: 90%;
+    }
+
+    .cuadro_3 a.link1 {
+        font-size: 14px;
+    }
+}
 
 .titulo2{
 position: relative;
-margin-top:6px;
+margin-top:4px;
 left: 35px;
 }
 
@@ -81,42 +113,16 @@ margin-top:-40px;
 left:400px;
 }
 
-.titulo_3{
+.titulo_3, .titulo_4, .titulo_5{
     position: relative;
-    left:700px ;
+    left:900px ;
+    margin: 0px;
+    /* width:200px; */
 }
 
-.titulo_4{
+.link1, .link2, .link3{
     position: relative;
-    left:700px ;
-}
-
-.titulo_5{
-    position: relative;
-    left:700px ;
-}
-
-.link1{
-    position: relative;
-    left: 680px;
-    position: relative;
-    top:20px;
+    left: 880px;
     font-size: 12px; 
-}
-
-.link2{
-    position: relative;
-    left: 680px;
-    position: relative;
-    top:20px;
-    font-size: 12px; 
-}
-.link3{
-    position: relative;
-    left: 680px;
-    position: relative;
-    top:20px;
-    font-size: 12px; 
-
 }
 
