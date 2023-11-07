@@ -50,50 +50,22 @@ a {
     align-items: center;
 }
 
-.for{
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
+.footer{
+    position: fixed;
+    bottom: 0;
+    background-color:#36761C;
+    height: 60px;
+    width: 100%
+}
+
+.fbar{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    
-    
 }
 
-.formulario{
-background-color: #ffff;
-border: 1px solid #ccc;
-border-radius: 5px;
-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-padding: 1ch;
-width: 37%;
-height: 47%;
-position: absolute;
-left: 5%;
-top: 30%;
-
+p {
+    color: #ccc;
+    font-size: 14px;
+    font-weight: bold;
 }
-.formulario_registro{
-    background-color: #ffff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 1%; 
-    width: 40%;  
-    height: 30%;
-    position: absolute;
-    right: 15%;
-    top: 220px;
-
-
-}
-.fondo2{
-    background-color: #36761C;
-    height: 20vh;
-    width: 1000cp;
-    margin-top: 900px;
-}
-
